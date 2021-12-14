@@ -7,9 +7,9 @@ const useFetch = (url) => {
     const[error, setError]=useState(null);
 
 
-    useEffect(() =>{
+    useEffect(() => {
         const abortCont = new AbortController();
-        setTimeout(() =>{
+        setTimeout(() => {
          fetch(url, {signal: abortCont.signal})
          .then(res =>{
              console.log("***This is Response", res)

@@ -1,0 +1,4 @@
+To Run the JSON server :.
+        npx json-server --watch data/db.json --port 8000         
+ to start the app:
+        npm start
